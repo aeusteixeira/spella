@@ -1,0 +1,86 @@
+$color1: #807577;
+$color2: #817272;
+$color3: #716566;
+$color4: #4B4648;
+$color5: #444043;
+$color6: #1E1D20;
+$color7: #131418;
+$color8: #121417;
+$color9: #ececec;
+
+
+$theme-colors: (
+    'color1': $color1,
+    'color2': $color2,
+    'color3': $color3,
+    'color4': $color4,
+    'color5': $color5,
+    'color6': $color6,
+    'color7': $color7,
+    'color8': $color8,
+    'color9': $color9,
+);
+
+.w-35 {
+    width: 35% !important;
+}
+
+.animate {
+    transition: .3s;
+}
+
+.animate:hover {
+    box-shadow: 0 1rem 3rem #7165665e;
+}
+
+.animate a{
+    color: aliceblue;
+}
+
+.animate a:hover{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+
+header{
+    background-image: url(../img/serge-esteve-5821-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    //border-bottom-left-radius: 100% 20%;
+    //border-bottom-right-radius: 100% 20%;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(75%);
+}
+
+nav{
+    border-bottom-left-radius: 100% 25%;
+    border-bottom-right-radius: 100% 25%;
+}
+
+.invert-img{
+    filter: invert(100%);
+}
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro');
+
+.title{
+    font-family: 'Source Serif Pro', serif;
+}
+
+.text{
+    font-family: 'Open Sans', sans-serif;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Averia+Serif+Libre');
+
+.nav-link{
+    font-family: 'Averia Serif Libre', cursive;
+
+}
+
+$enable-responsive-font-sizes: true !important;
+$enable-rounded: false;
+
+@import "../../node_modules/bootstrap/scss/bootstrap";
