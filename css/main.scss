@@ -30,6 +30,10 @@ width: 286px;
     width: 35% !important;
 }
 
+.w-45 {
+    width: 45% !important;
+}
+
 .card{
     width: 20rem;
 }
@@ -59,13 +63,20 @@ header{
     //border-bottom-left-radius: 100% 20%;
     //border-bottom-right-radius: 100% 20%;
     -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-    filter: grayscale(75%);
 }
 
+.filter{
+    filter: grayscale(75%);
+}
 
 nav{
     border-bottom-left-radius: 100% 25%;
     border-bottom-right-radius: 100% 25%;
+}
+
+footer{
+    border-top-left-radius: 100% 25%;
+    border-top-right-radius: 100% 25%;
 }
 
 .invert-img{
