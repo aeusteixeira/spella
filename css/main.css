@@ -1,7 +1,16 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans|Source+Serif+Pro");
 @import url("https://fonts.googleapis.com/css?family=Averia+Serif+Libre");
+.corte {
+  height: 160px;
+  width: 286px;
+}
+
 .w-35 {
   width: 35% !important;
+}
+
+.card {
+  width: 20rem;
 }
 
 .animate {
@@ -30,7 +39,7 @@ header {
   background-attachment: fixed;
   -webkit-filter: grayscale(100%);
   /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+  filter: grayscale(75%);
 }
 
 nav {
