@@ -207,7 +207,9 @@
 
 <footer class="bg-color4 p-4">
     <div class="container">
-        <div class="row align-items-center">
+        <div class=" text-center">
+            <p class="lead text-light">by: Matheus Teixeira</p>
+            <!--
             <div class="col-lg-12 col-lg-6 text-light">
                 <h6>HOURS</h6>
                 <div class="title"><span class="border-bottom"> MONDAY - THURSDAY</span></h6>
@@ -223,7 +225,7 @@
                     <div>Monday - Saturday</div>
                     <div>3:00pm - 6:00pm</div>
                 </div>
-            </div>
+            </div>-->
         </div>
 </footer>
 
@@ -234,7 +236,12 @@
 var $doc=$('html, body');
 $('.scroll').click(function(){
     $doc.animate({scrollTop: $( $.attr(this, 'href') ).offset().top}, 500);
-    $(this).toggleClass( "active" );
+    
+    if(this.$doc = $doc){
+        $(this).addClass( "active" );
+    }else{
+        $(this).removeClass( "active" );
+    }
     return false;
     });
 </script>
