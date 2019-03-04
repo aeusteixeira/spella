@@ -9,7 +9,7 @@
     <title>spella</title>
 </head>
 <body>
-<header class="bg-color4 filter">
+<header class="bg-color4 filter" id="home">
     <div class="container">
         <div class="row vh-100 align-items-center justify-content-center">
             <div class="col-sm-12 text-center">
@@ -19,10 +19,10 @@
     </div>
 </header>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-color4 shadow">
+<nav class="navbar navbar-expand-lg navbar-dark bg-color4 shadow sticky-top" id="navbar">
     <div class="container">
         <a class="navbar-brand" href="#">
-            <img src="img/cafe.png" alt="" class="w-35 invert-img">
+            <img src="img/cafe.png" alt="spella icon" class="w-35 invert-img">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -30,16 +30,19 @@
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
             <li class="nav-item active">
-                <a class="nav-link nav-text" href="#">Home <span class="sr-only">(current)</span></a>
+                <a class="nav-link nav-text scroll" href="#home">Home <span class="sr-only">(Home)</span></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link nav-text" href="#">Features</a>
+                <a class="nav-link nav-text scroll" href="#about">About</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
+                <a class="nav-link scroll" href="#menu">Menu</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                <a class="nav-link scroll" href="#comments">Comments</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link scroll" href="#map">Map</a>
             </li>
             </ul>
         </div>
@@ -47,12 +50,12 @@
 </nav>
 
 <main class="container mt-5">
-    <section id="about">
-        <blockquote class="blockquote text-center">
-            <p class="mb-0 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
-            <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-        </blockquote>
-    </section>
+<section id="about">
+    <blockquote class="blockquote text-center">
+        <p class="mb-0 text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere erat a ante.</p>
+        <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+    </blockquote>
+</section>
 
 <section id="menu" class="mb-5">
     <h4 class="title mb-3">
@@ -66,17 +69,14 @@
                 <h5 class="card-title">Home Coffee</h5>
                 <p class="card-text">
                     <div class="">
-                        • With creamy
+                        • With creamy - <small class="text-secondary">$ 3.00</small>
                     </div>
                     <div class="">
-                        • With cinnamon
+                        • With cinnamon - <small class="text-secondary">$ 3.00</small>
                     </div>
                     <div class="">
-                        • With milk
+                        • With milk - <small class="text-secondary">$ 2.50</small>
                     </div>
-                </p>
-                <p class="lead">
-                        $ 2.5
                 </p>
             </div>
         </div>
@@ -88,18 +88,15 @@
                 <h5 class="card-title">Donals</h5>
                     <p class="card-text">
                         <div class="">
-                            • Coco
+                            • Coco - <small class="text-secondary">$ 4.00</small>
                         </div>
                         <div class="">
-                            • Peanut
+                            • Peanut - <small class="text-secondary">$ 4.50</small>
                         </div>
                         <div class="">
-                            • Guava paste
+                            • Guava paste - <small class="text-secondary">$ 4.75</small>
                         </div>
                     </p>
-                    <p class="lead">
-                            $ 4.50
-                        </p>
             </div>
         </div>
     </div>
@@ -110,17 +107,14 @@
                 <h5 class="card-title">Juices</h5>
                 <p class="card-text">
                     <div class="">
-                        • Strawberry
+                        • Strawberry - <small class="text-secondary">$ 4.50</small>
                     </div>
                     <div class="">
-                        • Grape
+                        • Grape - <small class="text-secondary">$ 4.00</small>
                     </div>
                     <div class="">
-                        • Passion fruit
+                        • Passion fruit - <small class="text-secondary">$ 3.50</small>
                     </div>
-                </p>
-                <p class="lead">
-                    $ 3.00
                 </p>
             </div>
         </div>
@@ -132,45 +126,67 @@
     <h4 class="title mb-3">
         <span class="border-bottom p-1 text-light bg-color6">comments</span>
     </h4>
-    <div class="row align-items-center mb-3">
-        <div class="col-sm-12 col-md-4 text-center">
-            <img src="img/icons/2AG8omMO_400x400.jpg" alt="" class="img-fluid rounded-circle w-45 animate">
-        </div>
-        <div class="col-sm-12 col-md-8">
-            <h4 class="title">Adelle Charles</h4>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam assumenda
-                adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
-                dolorem sequi laudantium et est.</p>
-                <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i></span>
-        </div>
+<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+<div class="carousel-inner p-5">
+<div class="carousel-item active">
+<div class="row align-items-center mb-3">
+    <div class="col-sm-12 col-md-4 text-center">
+        <img src="img/icons/2AG8omMO_400x400.jpg" alt="" class="img-fluid rounded-circle w-45 animate">
     </div>
-    <hr>
-    <div class="row align-items-center mb-3">
-        <div class="col-sm-12 col-md-4 text-center">
-            <img src="img/icons/ULLVjrSd_400x400.png" alt="" class="img-fluid rounded-circle w-45 animate">
-        </div>
-        <div class="col-sm-12 col-md-8">
-            <h4 class="title">Sauro</h4>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam assumenda
-                adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
-                dolorem sequi laudantium et est.</p>
-                <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-        </div>
+    <div class="col-sm-12 col-md-8">
+        <h4 class="title">Adelle Charles</h4>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam
+            assumenda
+            adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
+            dolorem sequi laudantium et est.</p>
+        <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star-half-alt"></i></span>
     </div>
-    <hr>
-    <div class="row align-items-center mb-3">
-        <div class="col-sm-12 col-md-4 text-center">
-            <img src="img/icons/l3wwN-l-_400x400.jpeg" alt="" class="img-fluid rounded-circle w-45 animate">
-        </div>
-        <div class="col-sm-12 col-md-8">
-            <h4 class="title">Rem</h4>
-            <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam assumenda
-                adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
-                dolorem sequi laudantium et est.</p>
-                <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
-        </div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="row align-items-center mb-3">
+    <div class="col-sm-12 col-md-4 text-center">
+        <img src="img/icons/l3wwN-l-_400x400.jpeg" alt="" class="img-fluid rounded-circle w-45 animate">
     </div>
-    <hr>
+    <div class="col-sm-12 col-md-8">
+        <h4 class="title">Rem</h4>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam
+            assumenda
+            adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
+            dolorem sequi laudantium et est.</p>
+        <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+    </div>
+</div>
+</div>
+<div class="carousel-item">
+<div class="row align-items-center mb-3">
+    <div class="col-sm-12 col-md-4 text-center">
+        <img src="img/icons/ULLVjrSd_400x400.png" alt="" class="img-fluid rounded-circle w-45 animate">
+    </div>
+    <div class="col-sm-12 col-md-8">
+        <h4 class="title">Sauro</h4>
+        <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum incidunt aliquam
+            assumenda
+            adipisci, earum corrupti numquam dolorem ipsam debitis ad mollitia! Sed illum, quos dicta
+            dolorem sequi laudantium et est.</p>
+        <span class="title"><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span>
+    </div>
+</div>
+</div>
+</div>
+<a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+<span class="carousel-control-prev-icon text-dark" aria-hidden="true"></span>
+<span class="sr-only">Anterior</span>
+</a>
+<a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+<span class="carousel-control-next-icon" aria-hidden="true"></span>
+<span class="sr-only">Próximo</span>
+</a>
+</div>
 </section>
 
 <section id="map" class="mb-5">
@@ -187,6 +203,8 @@
 </div>
 </section>
 </main>
+
+
 <footer class="bg-color4 p-4">
     <div class="container">
         <div class="row align-items-center">
@@ -205,14 +223,20 @@
                     <div>Monday - Saturday</div>
                     <div>3:00pm - 6:00pm</div>
                 </div>
-                <div class="col-6">
-                </div>
             </div>
         </div>
 </footer>
+
 <script src="js/jquery.min.js"></script>
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-
+<script>
+var $doc=$('html, body');
+$('.scroll').click(function(){
+    $doc.animate({scrollTop: $( $.attr(this, 'href') ).offset().top}, 500);
+    $(this).toggleClass( "active" );
+    return false;
+    });
+</script>
 </body>
 </html>
